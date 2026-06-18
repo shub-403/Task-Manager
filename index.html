@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <!-- This is form PopUp Tab START -->
+    <div class="task-popup">
+        <button class="close">❌</button>
+        <form>
+            <input type="text" placeholder="Enter Task">
+            <select name="category" id="category">
+                <option selected disabled value="">Select Category</option>
+                <option value="work">💼 Work</option>
+                <option value="personal">👤 Personal</option>
+                <option value="learning">📚 Learning</option>
+                <option value="health">💪 Health</option>
+                <option value="finance">💰 Finance</option>
+                <option value="goals">🎯 Goals</option>
+            </select>
+            <button class="addTask">Add Task</button>
+        </form>
+    </div>
+    <!-- This is form PopUp Tab END -->
+
+    <!-- Task Section START -->
+    <section class="task-section">
+        <div class="heading">
+            <h1>Task App</h1>
+            <div class="head-btns">
+                <button class="create-task">Create Task</button>
+                <button class="theme">Light</button>
+            </div>
+        </div>
+        <h1 class="task-heading">Your Tasks</h1>
+        <div class="task-cards">
+        </div>
+    </section>
+    <!-- Task Section END -->
+
+    <!-- Event Propagation Section START -->
+    <section class="event-propagation">
+        <h1>Event Propagation</h1>
+        <div class="event-demostrastion">
+            <div id="grandparent" class="event-box">
+                GrandParent
+                <div id="parent" class="event-box">
+                    Parent
+                    <div id="child" class="event-box"><button>Child</button></div>
+                </div>
+            </div>
+            <div class="bubble-capture">
+                <button id="capture">Capturing</button>
+                <button id="bubble">Bubbling</button>
+            </div>
+            <div class="event-display">
+            </div>
+        </div>
+    </section>
+    <!-- Event Propagation Section END -->
+
+    <!-- Rendering Pipeline Section START -->
+     <section class="render-pipeline">
+        <ul class="pipeline">
+            <li class="text">HTML</li>
+            <li class="arrow">⬇️</li>
+            <li class="text">Parsing</li>
+            <li class="arrow">⬇️</li>
+            <li class="text">Tokenization</li>
+            <li class="arrow">⬇️</li>
+            <li class="text">DOM Tree</li>
+            <li class="text">CSS</li>
+            <li class="arrow">⬇️</li>
+            <li class="text">CSSOM Tree</li>
+            <li class="text">DOM Tree + CSSOM Tree</li>
+            <li class="arrow">⬇️</li>
+            <li class="text">Render Tree</li>
+        </ul>
+        <div class="pipeline-meaning">hello</div>
+     </section>
+    <!-- Rendering Pipeline Section END -->
+
+    <!-- Difference START -->
+     <section class="diffrence">
+        <h1><b>input.value</b> gets the current live value, while <b>getAttribute("value")</b> gets the original HTML value.</h1>
+     </section>
+    <!-- Difference END -->
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
